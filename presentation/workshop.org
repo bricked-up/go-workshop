@@ -2,6 +2,7 @@
 #+author: Rumen Mitov
 #+email: rmitov@constructor.university
 #+startup: beamer
+#+options: toc:nil
 #+latex_class: beamer
 
 * Go: A Quick Introduction
@@ -47,6 +48,7 @@ This applies to final commits (i.e. commits when merging):
 - *hotfix(<bug>)*: description
 - *bug(<bug>)*: description
 - *tests(<feature>)*: description
+- *misc*: description
 
 
 #+begin_example
