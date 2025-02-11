@@ -49,6 +49,8 @@ This applies to final commits (i.e. commits when merging):
 - *bug(<bug>)*: description
 - *tests(<feature>)*: description
 - *misc*: description
+- *docs*: description
+- *update*: description
 
 
 #+begin_example
