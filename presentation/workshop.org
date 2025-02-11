@@ -23,8 +23,13 @@ Run from the root directory of this repo: =go run ./src=
 * Further Web Examples
 [[https://gowebexamples.com/][Go web examples]]
 
-* Organization of our Repo
+* Cover at Home!
+- [[https://go.dev/doc/effective_go#formatting][Formatting]] 
+- [[https://go.dev/doc/effective_go#names][Naming Convention]]
+- [[https://go.dev/doc/comment][Doc Comments]]
+- [[https://pkg.go.dev//testing#section-documentation][Unit Tests]] (up to Benchmarks for now)
 
+* Organization of our Repo
 * Directory Structure
 - *src* - for main endpoint handling / routing
 - *src/utils* - common utility functions
@@ -60,7 +65,6 @@ feat(login): created login endpoint
 * Merging
 - *Squash merge* if your feature is ready to be merged upstream!
 - The developer is responsible for resolving any merge conflicts!
-
 
 * Rebasing
 - *Rebase* if you are still working on your code, but you need to pull the latest changes!
