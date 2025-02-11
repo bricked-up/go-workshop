@@ -59,4 +59,8 @@ feat(login): created login endpoint
 
 * Merging
 - *Squash merge* if your feature is ready to be merged upstream!
+- The developer is responsible for resolving any merge conflicts!
+
+
+* Rebasing
 - *Rebase* if you are still working on your code, but you need to pull the latest changes!
