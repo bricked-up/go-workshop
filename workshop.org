@@ -1,0 +1,57 @@
+#+title: Go Workshop
+#+author: Rumen Mitov
+#+email: rmitov@constructor.university
+#+startup: beamer
+#+latex_class: beamer
+
+* Go: A Quick Introduction
+- Systems programming language
+- Garbage-collected
+- Large standard library
+- Great developer tooling
+
+* Installation
+[[https://go.dev/doc/install][Golang Installation]]
+
+* Tour of Go
+[[https://go.dev/tour/list][Start the tour!]]
+
+* Workshop: Simple Go Endpoint
+
+* Further Web Examples
+[[https://gowebexamples.com/][Go web examples]]
+
+* Organization of our Repo
+
+* Directory Structure
+- *src* - for main endpoint handling / routing
+- *sql* - sql scripts to initiate database tables / populate database with dummy data
+- *utils* - common utility functions
+- *assets* - media (videos, images, etc.)
+- *docs* - documentation
+  
+* Branch Policy
+- each new feature / fix is its own branch
+- commit freely to that branch
+- feature must work in order to be merged with the =dev= branch
+- developers submit pull requests to =dev= branch ([[*Commit Message Prefix][meaningful]] commit message)
+- backend lead is responsible for making sure =dev= works before merging with =master=
+- *NOTE*: Only =dev= merges with =master=
+
+* Commit Message Prefix
+This applies to final commits (i.e. commits when merging):
+- *feat(<feature>)*: description
+- *refactor(<feature>)*: description
+- *fix(<feature>):* description
+- *hotfix(<bug>)*: description
+- *bug(<bug>)*: description
+- *tests(<feature>)*: description
+
+
+#+begin_example
+feat(login): created login endpoint
+#+end_example
+
+* Merging
+- *Squash merge* if your feature is ready to be merged upstream!
+- *Rebase* if you are still working on your code, but you need to pull the latest changes!
