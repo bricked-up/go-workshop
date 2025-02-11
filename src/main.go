@@ -1,19 +1,12 @@
+// NOTE: `package main` designates that this file is the entrypoint.
 package main
 
-import (
-	"fmt"
-	"log"
-	"net/http"
-)
+// NOTE: Import our own module from the `router` sub-directory.
+import "server/router"
 
 const PORT = ":3000";
 
-
 func main() {
-    http.HandleFunc("/", func(res http.ResponseWriter, req *http.Request) {
-        fmt.Fprintf(res, "Hello from my simple server!");
-    });
-
-    fmt.Println("Listening to port: ", PORT);
-    log.Fatal(http.ListenAndServe(PORT, nil));
+    // NOTE: How the module name prefixes the exported function!
+    router.Init(PORT);
 }
