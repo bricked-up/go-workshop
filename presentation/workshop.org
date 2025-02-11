@@ -27,8 +27,8 @@ Run from the root directory of this repo: =go run ./src=
 
 * Directory Structure
 - *src* - for main endpoint handling / routing
+- *src/utils* - common utility functions
 - *sql* - sql scripts to initiate database tables / populate database with dummy data
-- *utils* - common utility functions
 - *assets* - media (videos, images, etc.)
 - *docs* - documentation
   
