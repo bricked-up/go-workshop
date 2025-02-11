@@ -1,0 +1,106 @@
+% Created 2025-02-11 Tue 15:30
+% Intended LaTeX compiler: pdflatex
+\documentclass[presentation]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\usetheme{default}
+\author{Rumen Mitov}
+\date{\today}
+\title{Go Workshop}
+\hypersetup{
+ pdfauthor={Rumen Mitov},
+ pdftitle={Go Workshop},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 29.4 (Org mode 9.6.15)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+\begin{frame}{Outline}
+\tableofcontents
+\end{frame}
+
+
+\begin{frame}[label={sec:org5c24fbe}]{Go: A Quick Introduction}
+\begin{itemize}
+\item Systems programming language
+\item Garbage-collected
+\item Large standard library
+\item Great developer tooling
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label={sec:org790e5c1}]{Installation}
+\href{https://go.dev/doc/install}{Golang Installation}
+\end{frame}
+
+\begin{frame}[label={sec:orgbc6e130}]{Tour of Go}
+\href{https://go.dev/tour/list}{Start the tour!}
+\end{frame}
+
+\begin{frame}[label={sec:org3742f35},fragile]{Workshop: Simple Go Endpoint}
+ Run from the root directory of this repo: \texttt{go run ./src}
+\end{frame}
+
+\begin{frame}[label={sec:orgf891335}]{Further Web Examples}
+\href{https://gowebexamples.com/}{Go web examples}
+\end{frame}
+
+\begin{frame}[label={sec:orgd8c5bfd}]{Organization of our Repo}
+\end{frame}
+
+\begin{frame}[label={sec:org9508b8e}]{Directory Structure}
+\begin{itemize}
+\item \alert{src} - for main endpoint handling / routing
+\item \alert{sql} - sql scripts to initiate database tables / populate database with dummy data
+\item \alert{utils} - common utility functions
+\item \alert{assets} - media (videos, images, etc.)
+\item \alert{docs} - documentation
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label={sec:orga819eb8},fragile]{Branch Policy}
+ \begin{itemize}
+\item each new feature / fix is its own branch
+\item commit freely to that branch
+\item feature must work in order to be merged with the \texttt{dev} branch
+\item developers submit pull requests to \texttt{dev} branch (\hyperlink{sec:orgf69369e}{meaningful} commit message)
+\item backend lead is responsible for making sure \texttt{dev} works before merging with \texttt{master}
+\item \alert{NOTE}: Only \texttt{dev} merges with \texttt{master}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label={sec:orgf69369e},fragile]{Commit Message Prefix}
+ This applies to final commits (i.e. commits when merging):
+\begin{itemize}
+\item \alert{feat(<feature>)}: description
+\item \alert{refactor(<feature>)}: description
+\item \alert{fix(<feature>):} description
+\item \alert{hotfix(<bug>)}: description
+\item \alert{bug(<bug>)}: description
+\item \alert{tests(<feature>)}: description
+\end{itemize}
+
+
+\begin{verbatim}
+feat(login): created login endpoint
+\end{verbatim}
+\end{frame}
+
+\begin{frame}[label={sec:org4b7e846}]{Merging}
+\begin{itemize}
+\item \alert{Squash merge} if your feature is ready to be merged upstream!
+\item \alert{Rebase} if you are still working on your code, but you need to pull the latest changes!
+\end{itemize}
+\end{frame}
+\end{document}

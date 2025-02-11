@@ -17,6 +17,7 @@
 [[https://go.dev/tour/list][Start the tour!]]
 
 * Workshop: Simple Go Endpoint
+Run from the root directory of this repo: =go run ./src=
 
 * Further Web Examples
 [[https://gowebexamples.com/][Go web examples]]
