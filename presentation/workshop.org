@@ -26,7 +26,7 @@ Run from the root directory of this repo: =go run ./src=
 * Cover at Home!
 - [[https://go.dev/doc/effective_go#formatting][Formatting]] 
 - [[https://go.dev/doc/effective_go#names][Naming Convention]]
-- [[https://go.dev/doc/comment][Doc Comments]]
+- [[https://www.nathanrockhold.com/posts/go-godoc/][Doc Comments]]
 - [[https://pkg.go.dev//testing#section-documentation][Unit Tests]] (up to Benchmarks for now)
 
 * Organization of our Repo
